@@ -1,0 +1,90 @@
+body {
+    background: #e0f7fa;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: background 0.5s ease-in-out;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 90%;
+}
+
+.contenedor-formulario, .contenedor-clima {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 48%;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: #0288d1;
+    font-weight: 700;
+    text-align: center;
+}
+
+.control-formulario {
+    border-radius: 50px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.control-formulario:focus {
+    background-color: #e0f7fa;
+    border-color: #0288d1;
+    box-shadow: 0 0 10px rgba(0, 136, 212, 0.6);
+}
+
+.btn-primario {
+    background-color: #0288d1;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn-primario:hover {
+    background-color: #0277bd;
+}
+
+#resultadoClima {
+    display: none;
+    text-align: center;
+}
+
+#resultadoClima h4 {
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    color: #0288d1;
+}
+
+#resultadoClima .temperatura {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0288d1;
+}
+
+#resultadoClima .icono-clima {
+    font-size: 5rem;
+    margin-top: 15px;
+}
+
+.alerta-peligro {
+    background-color: #f44336;
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    display: none;
+}
